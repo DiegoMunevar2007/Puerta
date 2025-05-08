@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContadorComponent implements OnInit {
 
-  private cantidadGanados : number;
-  private cantidadPerdidas : number;
+  cantidadGanados : number;
+  cantidadPerdidas : number;
   constructor() {
     this.cantidadGanados=0;
     this.cantidadPerdidas=0;
