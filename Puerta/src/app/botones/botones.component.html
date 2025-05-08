@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div id="paso-1" *ngIf="paso===1">
+    <h3 class="text-center ">Escoja una puerta</h3>
+    <div class="row">
+      <div class="col">
+        <button (click)="onPuertaEscogida(1)">Puerta 1</button>
+      </div>
+      <div class="col">
+        <button (click)="onPuertaEscogida(2)">Puerta 2</button>
+      </div>
+      <div class="col">
+        <button (click)="onPuertaEscogida(3)">Puerta 3</button>
+      </div>
+    </div>
+  </div>
+  <div id="paso-2" *ngIf="paso===2">
+    <h3 class="text-center ">¿Desea cambiar o mantener su puerta?</h3>
+    <div class="row">
+      <div class="col" *ngIf="onCambio(true)">
+        <button>Cambiar</button>
+      </div>
+      <div class="col" *ngIf="onCambio(false)">
+        <button>Mantener</button>
+      </div>
+    </div>
+  </div>
+</div>
